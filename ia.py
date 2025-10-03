@@ -152,8 +152,8 @@ def parse_inputs(argv):
     parser.add_argument('--prop', '-p', action='store_true', 
                         help='Flag to propagate terms in annotation file according to the ontology graph')
 
-    parser.add_argument('--parse_obsolete', default=True, action=argparse.BooleanOptionalAction,
-                        help='Flag to read obsolete ontology terms in the the ontology graph.')
+    parser.add_argument('--parse_obsolete', default=False, action=argparse.BooleanOptionalAction,
+                        help='Flag to read obsolete ontology terms in the the ontology graph. False by default.')
 
     return parser.parse_args(argv)
 
